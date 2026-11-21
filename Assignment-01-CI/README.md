@@ -44,21 +44,30 @@ The pipeline was successfully executed through GitHub Actions, with both linting
 
 ## Screenshots and Evidence
 
-The application code, tests, and workflow configuration are available in this repository, so screenshots of those files and the project tree are unnecessary. Screenshots are for run evidence only. They are not included yet; capture the following three and save them in `Assignment-01-CI/screenshots/` (create the directory if needed), then commit them to Git.
+The application code, tests, and workflow configuration are available in this repository, so screenshots of those files and the project tree are unnecessary. The screenshots below provide run evidence. The two failure images document the separate workflow-trigger and test-collection issues.
 
-| Filename | Evidence to capture | Status |
+| Screenshot | Evidence |
 |---|---|---|
-| `05-local-validation.png` | Successful local Ruff and Pytest output | To capture |
-| `06-github-actions-failure.png` | The failed GitHub Actions run showing the Pytest exit code 5 | To capture |
-| `07-github-actions-success.png` | The successful GitHub Actions run with linting and tests passing | To capture |
+| `05-local-validation.png` | Local validation commands, Ruff passing, and the start of the Pytest run |
+| `06-github-actions-failure.png` | Initial workflow error: `No event triggers defined in on` |
+| `06-github-actions-failure-2.png` | Pytest exit code 5 and the Node.js 20 deprecation warning |
+| `07-github-actions-success.png` | GitHub Actions run with linting and unit tests passing |
 
-Keep the listed two-digit filenames and use PNG format. Capture enough of each terminal or workflow result to make the command, status, and relevant output readable. Avoid including unrelated browser tabs or personal information. The earlier workflow trigger issue is documented in [Troubleshooting](#troubleshooting); it does not need a separate screenshot.
+The screenshots are stored in `screenshots/` relative to this README. The Node.js 20 notice in the failed run is a warning; the Pytest exit code 5 was the failure.
 
-Once added, link images from this README using paths relative to this file, for example:
+### Local validation
 
-```markdown
-![Successful GitHub Actions run](screenshots/07-github-actions-success.png)
-```
+![Local validation terminal](screenshots/05-local-validation.png)
+
+### GitHub Actions failures
+
+![Initial workflow trigger error](screenshots/06-github-actions-failure.png)
+
+![Pytest exit code 5 and Node.js deprecation warning](screenshots/06-github-actions-failure-2.png)
+
+### Successful GitHub Actions run
+
+![GitHub Actions run with linting and tests passing](screenshots/07-github-actions-success.png)
 
 ## Troubleshooting
 
