@@ -75,7 +75,7 @@ The screenshots are stored in `screenshots/` relative to this README. The Node.j
 |---|---|---|
 | GitHub Actions reported `No event triggers defined in on` | The workflow's `on` key was not quoted, and the YAML parser interpreted it in a way that prevented GitHub Actions from recognizing the configured events. | Quote the key as `"on"` in `.github/workflows/ci.yml`, save the workflow, and rerun it. |
 | Pytest exited with code 5 | The test file had not been saved, so Pytest collected no tests. | Save `Assignment-01-CI/tests/test_calculator.py`, rerun the workflow, and confirm the tests pass. The workflow subsequently passed. |
-| Node.js 20 deprecation notice for `actions/checkout@v4` and `actions/setup-python@v5` | GitHub Actions warned that these action versions target Node.js 20 and were being forced to run on Node.js 24. | This was a deprecation warning, not the cause of the failed run. The failure was Pytest exit code 5; after saving the test file and rerunning, the workflow passed. |
+| Node.js 20 deprecation notice for `actions/checkout@v4` and `actions/setup-python@v5` | GitHub Actions warned that these action versions targeted Node.js 20 and were being forced to run on Node.js 24. | This was a warning, not the cause of the failed run. The workflow now uses `actions/checkout@v7` and `actions/setup-python@v7`; the original failure was Pytest exit code 5. |
 
 ## Key Learning Outcomes
 
