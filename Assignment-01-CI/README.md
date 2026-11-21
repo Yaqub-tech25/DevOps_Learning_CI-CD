@@ -44,19 +44,15 @@ The pipeline was successfully executed through GitHub Actions, with both linting
 
 ## Screenshots and Evidence
 
-Screenshots are not included yet. Capture the evidence below and save the image files in `Assignment-01-CI/screenshots/` (create the directory if needed). Add the screenshots to Git and replace each status with a link when the file has been captured and committed.
+The application code, tests, and workflow configuration are available in this repository, so screenshots of those files and the project tree are unnecessary. Screenshots are for run evidence only. They are not included yet; capture the following three and save them in `Assignment-01-CI/screenshots/` (create the directory if needed), then commit them to Git.
 
 | Filename | Evidence to capture | Status |
 |---|---|---|
-| `01-project-structure.png` | Repository tree showing `Assignment-01-CI/` and `.github/workflows/ci.yml` | To capture |
-| `02-python-application.png` | `app/calculator.py` showing the add and subtract functions | To capture |
-| `03-unit-tests.png` | `tests/test_calculator.py` showing both unit tests | To capture |
-| `04-ci-workflow.png` | `.github/workflows/ci.yml` showing the push and pull request triggers and CI steps | To capture |
 | `05-local-validation.png` | Successful local Ruff and Pytest output | To capture |
-| `06-github-actions-failure.png` | The initial workflow trigger error or the Pytest run with exit code 5 | To capture |
+| `06-github-actions-failure.png` | The failed GitHub Actions run showing the Pytest exit code 5 | To capture |
 | `07-github-actions-success.png` | The successful GitHub Actions run with linting and tests passing | To capture |
 
-Use the listed two-digit prefixes to keep screenshots in a readable order. Keep the full filenames shown above, use PNG format, and capture enough of the relevant file or run output to make the evidence clear. Avoid including unrelated browser tabs, personal information, or cropped-out error details. If a screenshot shows a failure, pair it with the corresponding resolution in the troubleshooting table below.
+Keep the listed two-digit filenames and use PNG format. Capture enough of each terminal or workflow result to make the command, status, and relevant output readable. Avoid including unrelated browser tabs or personal information. The earlier workflow trigger issue is documented in [Troubleshooting](#troubleshooting); it does not need a separate screenshot.
 
 Once added, link images from this README using paths relative to this file, for example:
 
